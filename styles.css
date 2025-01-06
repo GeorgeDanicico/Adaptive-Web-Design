@@ -403,14 +403,6 @@ h1 {
     left: 0;
 }
 
-.impossible-explanation .note {
-    background: rgba(231, 76, 60, 0.1);
-    padding: 15px;
-    border-radius: 8px;
-    color: #c0392b;
-    font-style: italic;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .impossible-content {
