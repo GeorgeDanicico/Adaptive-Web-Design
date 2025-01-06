@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding React</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+<body>
+    <!-- First page -->
+    <div class="hero">
+        <h1>What does React mean?</h1>
+        <div class="scroll-indicator">
+            <!-- <p>Scroll to discover</p> -->
+            <div class="arrow"></div>
+        </div>
+    </div>
+    
+    <!-- Second page (moved from bottom) -->
+    <div class="section">
+        <h2 class="section-title" data-aos="fade-up">Different Meanings of React</h2>
+        <div class="card-container">
+            <div class="card" onclick="flipCard(this)" data-aos="fade-up">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Chemistry</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                    <div class="card-back">
+                        <p>In chemistry, to react means when two or more substances combine to form new substances through a chemical reaction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)" data-aos="fade-up">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Programming</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                    <div class="card-back">
+                        <p>React is a popular JavaScript library for building user interfaces, particularly single-page applications.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)" data-aos="fade-up">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Human Behavior</h3>
+                        <p>Click to learn more</p>
+                    </div>
+                    <div class="card-back">
+                        <p>To react means to respond to a situation, stimulus, or another person's actions with a particular behavior or emotion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third page -->
+    <div class="section">
+        <h2 class="section-title" data-aos="fade-up">What's the first thing that comes to my mind?</h2>
+        <div class="personal-thought" data-aos="fade-up">
+            <p>As a programmer, when I hear "React", I immediately think of the powerful JavaScript library for building user interfaces. It's become synonymous with modern web development in my mind.</p>
+        </div>
+        <div class="scroll-indicator">
+            <div class="arrow"></div>
+        </div>
+    </div>
+
+    <!-- Fourth page -->
+    <div class="section">
+        <h2 class="section-title" data-aos="fade-up">What comes to others' minds?</h2>
+        <div class="card-container">
+            <div class="card" onclick="flipCard(this)" data-aos="fade-up">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Girlfriend</h3>
+                        <p>Click to see answer</p>
+                    </div>
+                    <div class="card-back">
+                        <p>React button on Facebook</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)" data-aos="fade-up">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Friend 1</h3>
+                        <p>Click to see answer</p>
+                    </div>
+                    <div class="card-back">
+                        <p>React UI Library</p>
+                        <small>(Also a programmer)</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)" data-aos="fade-up">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Friend 2</h3>
+                        <p>Click to see answer</p>
+                    </div>
+                    <div class="card-back">
+                        <p>To react something</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)" data-aos="fade-up">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h3>Friend 3</h3>
+                        <p>Click to see answer</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Immediate reaction to something</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section contexts-section">
+        <h2 class="section-title" data-aos="fade-up">React in Different Contexts</h2>
+    </div>
+
+    <div class="section contexts-content">
+        <div class="context-row" data-aos="fade-up">
+            <div class="context-text">
+                <h3>Emotional Response</h3>
+                <p>The psychological and emotional way people respond to situations, events, or stimuli. This includes immediate feelings, expressions, and emotional reactions to various triggers.</p>
+            </div>
+            <div class="context-image">
+                <img src="./images/emotional-reaction.jpeg" alt="Emotional Response Illustration">
+            </div>
+        </div>
+
+        <div class="context-row" data-aos="fade-up">
+            <div class="context-text">
+                <h3>Physical Response</h3>
+                <p>Involuntary or reflexive bodily reactions to external stimuli, such as jumping at a loud noise or withdrawing from a hot surface.</p>
+            </div>
+            <div class="context-image">
+                <img src="./images/physical-context.jpg" alt="Physical Response Illustration">
+            </div>
+        </div>
+
+        <div class="context-row" data-aos="fade-up">
+            <div class="context-text">
+                <h3>Scientific Context (Chemistry)</h3>
+                <p>The process where substances change their molecular structure when coming into contact with other substances, creating new compounds through chemical reactions.</p>
+            </div>
+            <div class="context-image">
+                <img src="./images/chemistry-context.jpg" alt="Chemistry Illustration">
+            </div>
+        </div>
+
+        <div class="context-row" data-aos="fade-up">
+            <div class="context-text">
+                <h3>Technology/Programming</h3>
+                <p>A JavaScript library for building user interfaces, particularly web applications. Known for its component-based architecture and efficient DOM updates.</p>
+            </div>
+            <div class="context-image">
+                <img src="./images/tech-context.png" alt="Programming Illustration">
+            </div>
+        </div>
+
+        <div class="context-row" data-aos="fade-up">
+            <div class="context-text">
+                <h3>Political or Social Response</h3>
+                <p>The collective response of society or political entities to events, policies, or social changes. Includes protests, movements, and policy changes.</p>
+            </div>
+            <div class="context-image">
+                <img src="./images/political-context.webp" alt="Political Response Illustration">
+            </div>
+        </div>
+
+        <div class="context-row" data-aos="fade-up">
+            <div class="context-text">
+                <h3>Gaming Context</h3>
+                <p>Quick-time events or gameplay mechanics where players must react rapidly to on-screen prompts or situations to progress or succeed.</p>
+            </div>
+            <div class="context-image">
+                <img src="./images/gaming-context.jpg" alt="Gaming Context Illustration">
+            </div>
+        </div>
+    </div>
+    
+    <div class="section impossible-section">
+        <h2 class="section-title" data-aos="fade-up">Impossible Contexts</h2>
+        <div class="impossible-container" data-aos="fade-up">
+            <div class="impossible-card">
+                <div class="impossible-header">
+                    <h3>Inanimate Objects</h3>
+                    <div class="impossible-icon">❌</div>
+                </div>
+                <div class="impossible-content">
+                    <div class="impossible-explanation">
+                        <p class="main-text">Inanimate objects cannot "react" in the true sense of the word because:</p>
+                        <ul>
+                            <li>They lack consciousness or awareness</li>
+                            <li>They don't have the ability to process information</li>
+                            <li>Any changes they undergo are purely due to external forces (physics, chemistry)</li>
+                            <li>They cannot make autonomous responses or decisions</li>
+                        </ul>
+                        <p class="note">Note: While objects might appear to "react" (like a ball bouncing), these are simply physical responses following the laws of nature, not true reactions in the sense of conscious or programmed responses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section variations-intro">
+        <h2 class="section-title" data-aos="fade-up">Variations of the word "React"</h2>
+    </div>
+
+    <div class="section variations-content">
+        <div class="variations-container">
+            <div class="variation-card" data-aos="zoom-in" style="--delay: 0.1s">
+                <h3>Reaction</h3>
+                <p>The response or change that occurs due to a stimulus or action.</p>
+            </div>
+
+            <div class="variation-card" data-aos="zoom-in" style="--delay: 0.3s">
+                <h3>Reactive</h3>
+                <p>Showing a response to a stimulus; acting in response rather than creating action.</p>
+            </div>
+
+            <div class="variation-card" data-aos="zoom-in" style="--delay: 0.2s">
+                <h3>Reactor</h3>
+                <p>A device or person that reacts or causes a reaction, often used in nuclear context.</p>
+            </div>
+
+            <div class="variation-card" data-aos="zoom-in" style="--delay: 0.4s">
+                <h3>Reactant</h3>
+                <p>A substance that takes part in a chemical reaction to form products.</p>
+            </div>
+
+            <div class="variation-card" data-aos="zoom-in" style="--delay: 0.15s">
+                <h3>Reactionary</h3>
+                <p>Opposing political or social progress or reform; extremely conservative.</p>
+            </div>
+
+            <div class="variation-card" data-aos="zoom-in" style="--delay: 0.25s">
+                <h3>Reactivate</h3>
+                <p>To make active again; to restore to a state of activity.</p>
+            </div>
+
+            <div class="variation-card" data-aos="zoom-in" style="--delay: 0.35s">
+                <h3>Reactiveness</h3>
+                <p>The quality or state of being reactive or responsive.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
