@@ -206,12 +206,22 @@ h1 {
 
 @media (max-width: 768px) {
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        padding: 0 15px;
     }
     
     .personal-thought {
-        font-size: 1.1rem;
-        padding: 20px;
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        padding: 0 15px;
+    }
+
+    .context-text h3 {
+        font-size: 1.3rem;
     }
 } 
 
@@ -498,5 +508,122 @@ h1 {
 
     .variation-card h3 {
         font-size: 1.3rem;
+    }
+} 
+
+/* Add new styles for very small screens */
+@media (max-width: 320px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-container {
+        padding: 10px;
+    }
+
+    .card {
+        height: 180px;
+    }
+
+    .card-front h3 {
+        font-size: 1.1rem;
+    }
+
+    .card-front p,
+    .card-back p {
+        font-size: 0.9rem;
+    }
+
+    .personal-thought {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    /* Context sections */
+    .context-row {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .context-text {
+        padding: 15px;
+    }
+
+    .context-text h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .context-text p {
+        font-size: 0.9rem;
+    }
+
+    /* Impossible section */
+    .impossible-card {
+        padding: 15px;
+    }
+
+    .impossible-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .impossible-explanation .main-text {
+        font-size: 1rem;
+    }
+
+    .impossible-explanation li {
+        font-size: 0.9rem;
+        padding: 8px 0 8px 20px;
+    }
+
+    /* Variations section */
+    .variation-card {
+        padding: 15px;
+    }
+
+    .variation-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .variation-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Update spacing for better mobile experience */
+.section {
+    padding: 20px 10px;
+}
+
+/* Ensure images don't overflow on small screens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Improve card container spacing */
+.card-container {
+    gap: 15px;
+}
+
+/* Add smooth font scaling */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 13px;
     }
 } 
